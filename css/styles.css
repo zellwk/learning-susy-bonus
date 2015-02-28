@@ -421,7 +421,7 @@ table {
   box-sizing: border-box;
 }
 
-/* line 26, ../scss/styles.scss */
+/* line 40, ../scss/styles.scss */
 .fluid-grid {
   max-width: 1140px;
   margin-left: auto;
@@ -438,13 +438,39 @@ table {
   display: block;
   clear: both;
 }
+@media (min-width: 800px) {
+  /* line 40, ../scss/styles.scss */
+  .fluid-grid {
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+    background-size: 8.47458%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+}
+/* line 47, ../scss/styles.scss */
+.fluid-grid .span {
+  width: 47.36842%;
+  float: left;
+  margin-right: 5.26316%;
+  margin-left: 26.31579%;
+}
+@media (min-width: 800px) {
+  /* line 47, ../scss/styles.scss */
+  .fluid-grid .span {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 16.94915%;
+  }
+}
 
-/* line 32, ../scss/styles.scss */
+/* line 58, ../scss/styles.scss */
 .asym-grid {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 4.65116%, transparent 4.65116%, transparent 5.11628%, rgba(102, 102, 255, 0.25) 5.11628%, rgba(179, 179, 255, 0.25) 14.4186%, transparent 14.4186%, transparent 14.88372%, rgba(102, 102, 255, 0.25) 14.88372%, rgba(179, 179, 255, 0.25) 28.83721%, transparent 28.83721%, transparent 29.30233%, rgba(102, 102, 255, 0.25) 29.30233%, rgba(179, 179, 255, 0.25) 47.90698%, transparent 47.90698%, transparent 48.37209%, rgba(102, 102, 255, 0.25) 48.37209%, rgba(179, 179, 255, 0.25) 71.62791%, transparent 71.62791%, transparent 72.09302%, rgba(102, 102, 255, 0.25) 72.09302%, rgba(179, 179, 255, 0.25));
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 9.70874%, transparent 9.70874%, transparent 10.67961%, rgba(102, 102, 255, 0.25) 10.67961%, rgba(179, 179, 255, 0.25) 30.09709%, transparent 30.09709%, transparent 31.06796%, rgba(102, 102, 255, 0.25) 31.06796%, rgba(179, 179, 255, 0.25) 60.19417%, transparent 60.19417%, transparent 61.16505%, rgba(102, 102, 255, 0.25) 61.16505%, rgba(179, 179, 255, 0.25));
   background-origin: content-box;
   background-clip: content-box;
   background-position: left top;
@@ -455,14 +481,39 @@ table {
   display: block;
   clear: both;
 }
+@media (min-width: 800px) {
+  /* line 58, ../scss/styles.scss */
+  .asym-grid {
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 6.94444%, transparent 6.94444%, transparent 7.63889%, rgba(102, 102, 255, 0.25) 7.63889%, rgba(179, 179, 255, 0.25) 21.52778%, transparent 21.52778%, transparent 22.22222%, rgba(102, 102, 255, 0.25) 22.22222%, rgba(179, 179, 255, 0.25) 50%, transparent 50%, transparent 50.69444%, rgba(102, 102, 255, 0.25) 50.69444%, rgba(179, 179, 255, 0.25) 85.41667%, transparent 85.41667%, transparent 86.11111%, rgba(102, 102, 255, 0.25) 86.11111%, rgba(179, 179, 255, 0.25));
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+}
+/* line 65, ../scss/styles.scss */
+.asym-grid .span {
+  width: 49.51456%;
+  float: left;
+  margin-left: 10.67961%;
+  margin-right: -100%;
+}
+@media (min-width: 800px) {
+  /* line 65, ../scss/styles.scss */
+  .asym-grid .span {
+    width: 63.19444%;
+    float: left;
+    margin-left: 22.22222%;
+    margin-right: -100%;
+  }
+}
 
-/* line 43, ../scss/styles.scss */
+/* line 78, ../scss/styles.scss */
 h2 {
   text-align: center;
   margin: 1.5em 0;
 }
 
-/* line 48, ../scss/styles.scss */
+/* line 83, ../scss/styles.scss */
 .span {
   background: rgba(0, 128, 128, 0.25);
 }
