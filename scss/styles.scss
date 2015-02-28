@@ -17,24 +17,59 @@ $fluid-grid: (
 $asym-grid:(
   output: isolate,
   container: 1140px,
-  columns: 1 2 3 4 5 6,
+  columns: 1 2 3 4,
   gutters: 0.1
   );
+
+$contexts: (
+  fluid: (
+    small: 4,
+    large: 12
+    ),
+
+  asym: (
+    small: 1 2 3 4,
+    large: 1 2 4 5 2
+    ),
+  );
+
+$bp-large: 800px;
 
 @include border-box-sizing;
 
 .fluid-grid {
-  @include with-layout($fluid-grid) {
-    @include container;
+  @include with-layout($fluid-grid) {    
+    @include container();
+    @include bp-with-context($bp-large, fluid, large) {
+      @include show-grid();
+    }
+
+    .span {
+      @include span-ac(2, fluid-span, small); 
+      margin-left: span(1 wide);
+      @include bp-with-context($bp-large, fluid, large) {
+        @include span-ac(8, fluid-span, large); 
+        margin-left: span(2 wide);
+      }
+    }
   }
 }
 
 .asym-grid {
   @include with-layout($asym-grid) {
-    @include container;
+    @include container();
+    @include bp-with-context($bp-large, asym, large) {
+      @include show-grid();
+    }
+
+    .span {
+      @include span-ac(2 at 2, asym-span, small);
+      @include bp-with-context(800px, asym, large) {
+        @include span-ac(2 at 3, asym-span, large); 
+      }
+    }
   }
 }
-
 
 // ==========
 // Demo Styles
