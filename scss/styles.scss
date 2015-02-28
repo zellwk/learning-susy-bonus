@@ -40,17 +40,8 @@ $bp-large: 800px;
 .fluid-grid {
   @include with-layout($fluid-grid) {    
     @include container();
-    @include bp-with-context($bp-large, fluid, large) {
+    @include bp-with-context($bp-large,fluid, large) {
       @include show-grid();
-    }
-
-    .span {
-      @include span-ac(2, fluid-span, small); 
-      margin-left: span(1 wide);
-      @include bp-with-context($bp-large, fluid, large) {
-        @include span-ac(8, fluid-span, large); 
-        margin-left: span(2 wide);
-      }
     }
   }
 }
@@ -58,15 +49,8 @@ $bp-large: 800px;
 .asym-grid {
   @include with-layout($asym-grid) {
     @include container();
-    @include bp-with-context($bp-large, asym, large) {
-      @include show-grid();
-    }
-
-    .span {
-      @include span-ac(2 at 2, asym-span, small);
-      @include bp-with-context(800px, asym, large) {
-        @include span-ac(2 at 3, asym-span, large); 
-      }
+    @include bp-with-context($bp-large,asym, large) {
+      @include show-grid(); 
     }
   }
 }
