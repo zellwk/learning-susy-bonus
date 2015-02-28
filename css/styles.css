@@ -448,8 +448,24 @@ table {
     background-position: left top;
   }
 }
+/* line 47, ../scss/styles.scss */
+.fluid-grid .span {
+  width: 47.36842%;
+  float: left;
+  margin-right: 5.26316%;
+  margin-left: 26.31579%;
+}
+@media (min-width: 800px) {
+  /* line 47, ../scss/styles.scss */
+  .fluid-grid .span {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 16.94915%;
+  }
+}
 
-/* line 49, ../scss/styles.scss */
+/* line 58, ../scss/styles.scss */
 .asym-grid {
   max-width: 1140px;
   margin-left: auto;
@@ -466,7 +482,7 @@ table {
   clear: both;
 }
 @media (min-width: 800px) {
-  /* line 49, ../scss/styles.scss */
+  /* line 58, ../scss/styles.scss */
   .asym-grid {
     background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 6.94444%, transparent 6.94444%, transparent 7.63889%, rgba(102, 102, 255, 0.25) 7.63889%, rgba(179, 179, 255, 0.25) 21.52778%, transparent 21.52778%, transparent 22.22222%, rgba(102, 102, 255, 0.25) 22.22222%, rgba(179, 179, 255, 0.25) 50%, transparent 50%, transparent 50.69444%, rgba(102, 102, 255, 0.25) 50.69444%, rgba(179, 179, 255, 0.25) 85.41667%, transparent 85.41667%, transparent 86.11111%, rgba(102, 102, 255, 0.25) 86.11111%, rgba(179, 179, 255, 0.25));
     background-origin: content-box;
@@ -474,14 +490,30 @@ table {
     background-position: left top;
   }
 }
+/* line 65, ../scss/styles.scss */
+.asym-grid .span {
+  width: 49.51456%;
+  float: left;
+  margin-left: 10.67961%;
+  margin-right: -100%;
+}
+@media (min-width: 800px) {
+  /* line 65, ../scss/styles.scss */
+  .asym-grid .span {
+    width: 63.19444%;
+    float: left;
+    margin-left: 22.22222%;
+    margin-right: -100%;
+  }
+}
 
-/* line 62, ../scss/styles.scss */
+/* line 78, ../scss/styles.scss */
 h2 {
   text-align: center;
   margin: 1.5em 0;
 }
 
-/* line 67, ../scss/styles.scss */
+/* line 83, ../scss/styles.scss */
 .span {
   background: rgba(0, 128, 128, 0.25);
 }
