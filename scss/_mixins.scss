@@ -57,7 +57,7 @@ $contexts: () !default;
 }
 
 
-// Span AC [Mixin]
+// Add Context [Mixin]
 // ---------------
 // Adds context to $context map
 // - $span        : <span>
@@ -68,7 +68,7 @@ $contexts: () !default;
   $n: susy-get(span, $map);
   $columns: susy-get(columns, $map);
   $gutters: susy-get(gutters, $map);
-  $spread: susy-get(spread, $map);
+  // $spread: susy-get(spread, $map);
   $edge: get-edge($span);
   $location: get-location($map);
   // Count number of columns if n is 'full'
@@ -82,18 +82,18 @@ $contexts: () !default;
   // Adds span to $contexts
   @if $breakpoint == null {
     @if $edge {
-      $contexts: _susy-deep-set($contexts, $name, $n $spread of $columns $gutters $edge) !global;
+      $contexts: _susy-deep-set($contexts, $name, $n of $columns $edge) !global;
     }
     @else {
-      $contexts: _susy-deep-set($contexts, $name, $n $spread of $columns $gutters at $location) !global;
+      $contexts: _susy-deep-set($contexts, $name, $n of $columns at $location) !global;
     }
   }
   @else {
     @if $edge {
-      $contexts: _susy-deep-set($contexts, $name, $breakpoint, $n $spread of $columns $gutters $edge) !global;
+      $contexts: _susy-deep-set($contexts, $name, $breakpoint, $n of $columns $edge) !global;
     }
     @else {
-      $contexts: _susy-deep-set($contexts, $name, $breakpoint, $n $spread of $columns $gutters at $location) !global;
+      $contexts: _susy-deep-set($contexts, $name, $breakpoint, $n of $columns at $location) !global;
     }
   }
 }

@@ -45,10 +45,10 @@ $bp-large: 800px;
     }
 
     .span {
-      @include span(2); 
+      @include span-ac(2, fluid-span, small); 
       margin-left: span(1 wide);
       @include bp-with-context($bp-large, fluid, large) {
-        @include span(8); 
+        @include span-ac(8, fluid-span, large); 
         margin-left: span(2 wide);
       }
     }
@@ -63,9 +63,9 @@ $bp-large: 800px;
     }
 
     .span {
-      @include span(2 at 2);
+      @include span-ac(2 at 2, asym-span, small);
       @include bp-with-context(800px, asym, large) {
-        @include span(2 at 3); 
+        @include span-ac(2 at 3, asym-span, large); 
       }
     }
   }
