@@ -1,29 +1,16 @@
 @import "normalize";
 @import "susy";
 @import "breakpoint";
-
-@mixin cf {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
+@import "mixins";
 
 $susy: (
-  global-box-sizing: border-box,
+  global-box-sizing: box-border, 
   debug: (image: show-columns)
   );
 
-@include border-box-sizing;
-
-// ==========
-// GRID MAPS
-// ==========
-
 $fluid-grid: (
   container: 1140px,
-  columns: 12, 
+  columns: 4, 
   gutters: 0.25
   );
 
@@ -32,66 +19,32 @@ $asym-grid:(
   container: 1140px,
   columns: 1 2 3 4 5 6,
   gutters: 0.1
-
   );
 
-$static-grid: (
-  math: static,
-  column-width: 80px,
-  columns: 8, 
-  gutters: 0.5
-  );
+@include border-box-sizing;
 
-// ==========
-// LAYOUT SUSY GRIDS
-// ==========
-
-.fluid-wrap {
+.fluid-grid {
   @include with-layout($fluid-grid) {
     @include container;
   }
 }
 
-.asym-wrap {
+.asym-grid {
   @include with-layout($asym-grid) {
     @include container;
   }
 }
 
-.static-wrap {
-  @include with-layout($static-grid) {
-    @include container;
-  }
-}
-
-.onthefly1-wrap {
-  @include with-layout(8 0.5 split) {
-    @include container;
-  }
-}
-
-.onthefly2-wrap {
-  @include with-layout(4 0.75 inside) {
-    @include container;
-  }
-}
 
 // ==========
 // Demo Styles
 // ==========
 
-section {
-  margin: 4rem;
-}
-
 h2 {
   text-align: center;
+  margin: 1.5em 0;
 }
 
-.fluid-wrap, 
-.asym-wrap, 
-.static-wrap, 
-.onthefly1-wrap, 
-.onthefly2-wrap {
-  height: 100px; 
+.span {
+  background: transparentize(teal,0.75);
 }

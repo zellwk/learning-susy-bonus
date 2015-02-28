@@ -421,26 +421,26 @@ table {
   box-sizing: border-box;
 }
 
-/* line 49, ../scss/styles.scss */
-.fluid-wrap {
+/* line 26, ../scss/styles.scss */
+.fluid-grid {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-  background-size: 8.47458%;
+  background-size: 26.31579%;
   background-origin: content-box;
   background-clip: content-box;
   background-position: left top;
 }
 /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
-.fluid-wrap:after {
+.fluid-grid:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 55, ../scss/styles.scss */
-.asym-wrap {
+/* line 32, ../scss/styles.scss */
+.asym-grid {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
@@ -450,81 +450,19 @@ table {
   background-position: left top;
 }
 /* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
-.asym-wrap:after {
+.asym-grid:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 61, ../scss/styles.scss */
-.static-wrap {
-  width: 920px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 66.66667%, transparent 66.66667%);
-  background-size: 120px;
-  background-origin: content-box;
-  background-clip: content-box;
-  background-position: left top;
-}
-/* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
-.static-wrap:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
-/* line 67, ../scss/styles.scss */
-.onthefly1-wrap {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, transparent 16.66667%, rgba(102, 102, 255, 0.25) 16.66667%, rgba(179, 179, 255, 0.25) 83.33333%, transparent 83.33333%);
-  background-size: 12.5%;
-  background-origin: content-box;
-  background-clip: content-box;
-  background-position: left top;
-}
-/* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
-.onthefly1-wrap:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
-/* line 73, ../scss/styles.scss */
-.onthefly2-wrap {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
-  background-size: 25%;
-  background-origin: content-box;
-  background-clip: content-box;
-  background-position: left top;
-}
-/* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
-.onthefly2-wrap:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
-/* line 83, ../scss/styles.scss */
-section {
-  margin: 4rem;
-}
-
-/* line 87, ../scss/styles.scss */
+/* line 43, ../scss/styles.scss */
 h2 {
   text-align: center;
+  margin: 1.5em 0;
 }
 
-/* line 91, ../scss/styles.scss */
-.fluid-wrap,
-.asym-wrap,
-.static-wrap,
-.onthefly1-wrap,
-.onthefly2-wrap {
-  height: 100px;
+/* line 48, ../scss/styles.scss */
+.span {
+  background: rgba(0, 128, 128, 0.25);
 }
