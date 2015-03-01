@@ -52,6 +52,16 @@ $bp-large: 800px;
         margin-left: span(2 wide);
       }
     }
+
+    p {
+      @include with-context(fluid-span, small) {
+        @include span(1); 
+      }
+      @include bp-with-context($bp-large, fluid-span, large) {
+        @include span(4);
+        margin-left: span(2 wide);
+      }
+    }
   }
 }
 
@@ -66,6 +76,15 @@ $bp-large: 800px;
       @include span-ac(2 at 2, asym-span, small);
       @include bp-with-context(800px, asym, large) {
         @include span-ac(2 at 3, asym-span, large); 
+      }
+    }
+
+    p {
+      @include with-context(asym-span, small) {
+        @include span(1 first); 
+      }
+      @include bp-with-context($bp-large, asym-span, large) {
+        @include span(1 last);
       }
     }
   }
